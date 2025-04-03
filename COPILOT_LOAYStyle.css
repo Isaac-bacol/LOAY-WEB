@@ -1,0 +1,17 @@
+.menu-icon {
+    font-size: 24px; /* Increase the size of the icons */
+    padding: 10px; /* Add padding around the icons */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+}
+
+.open-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.close-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}

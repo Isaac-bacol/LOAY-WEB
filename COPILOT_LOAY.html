@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Municipality of Loay</title>
+        <link rel="icon" href="LOAY LOGO PLAIN.png" type="image/icon type">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+        <style>
+            @media (max-width: 768px) {
+                .grid-container {
+                    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+                }
+            }
+
+            @media (max-width: 480px) {
+                .grid-container {
+                    grid-template-columns: 1fr; /* 1 column for mobile */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="1LOAYLOGO.png" alt="Loay logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times menu-icon close-icon" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Tourism</a></li> 
+                        <li><a href="">Officials</a></li>
+                        <li><a href="">Municipality</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars menu-icon open-icon" onclick="showmenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>Municipality of Loay</h1>
+                <p>
+                    Loay, officially the Municipality of Loay (Cebuano: Munisipalidad sa Loay; Tagalog: Bayan ng Loay), <br>
+                    is a municipality in the province of Bohol, Philippines. According to the 2020 census, <br>
+                    it has a population of 17,855 people.
+                </p>
+                <a href="https://www.facebook.com/oneloay" target="_blank" class="hero-btn">Visit Us to know more</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <h1>Our Services</h1>
+            <p>
+                Loay offers a variety of services to its constituents. <br>
+                Here are some of the services that we offer:
+            </p>
+            <div class="row">
+                <div class="services-col">
+                    <h3>Health Services</h3>
+                    <p>
+                        Loay offers health services to its constituents. <br>
+                        We have a health center that provides free medical check-ups and consultations.
+                    </p>
+                </div>
+                <div class="services-col">
+                    <h3>Education Services</h3>
+                    <p>
+                        Loay offers education services to its constituents. <br>
+                        We have public schools that provide free education to the youth.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tourist Destinations Section -->
+        <section class="tourist">
+            <h1>Tourist Destinations</h1>
+            <p>
+                Loay is known for its beautiful tourist destinations. <br>
+                Here are some of the tourist destinations that you can visit:
+            </p>
+            <div class="grid-container">
+                <!-- Loay Church -->
+                <div class="tourist-col">
+                    <h3>Loay Church</h3>
+                    <img src="loay-church.jpg" alt="Loay Church">
+                    <p><a href="https://en.wikipedia.org/wiki/Loay_Church" target="_blank">Loay Church</a> is a historical church that was built in the 1800s. <br>
+                        <br>
+                        It is known for its beautiful architecture and rich history.
+                    </p>
+                </div>
+
+                <!-- Rio Verde Floating Restaurant -->
+                <div class="tourist-col">
+                    <h3>Rio Verde Floating Restaurant</h3>
+                    <img src="rio-verde.jpg" alt="Rio Verde Floating Restaurant">
+                    <p><a href="https://www.facebook.com/rioverdebohol/" target="_blank">
+                        Rio Verde </a> Floating Restaurant offers a unique dining experience. <br>
+                        Enjoy delicious food while cruising along the river.
+                    </p>
+                </div>
+
+                <!-- Morning Hills -->
+                <div class="tourist-col">
+                    <h3>Morning Hills</h3>
+                    <img src="morning-hills.jpg" alt="Morning Hills">
+                    <p><a href="https://bisayatraveler.com/2017/03/21/himontagon-hills-serene-picture-perfect-local-secret-loay-bohol/" target="_blank">
+                        Morning Hills </a> is a serene destination perfect for relaxation. <br>
+                        It offers breathtaking views of the surrounding landscapes.
+                    </p>
+                </div>
+
+                <!-- Loay Bridge -->
+                <div class="tourist-col">
+                    <h3>Loay Bridge</h3>
+                    <img src="bgloay.jpg" alt="Loay Bridge">
+                    <p><a href="https://www.jica.go.jp/english/overseas/philippine/information/press/2022/220623_01.html" target="_blank">
+                        Loay Bridge </a> is a historical landmark that connects the town. <br>
+                        It offers scenic views of the river and surrounding areas.
+                    </p>
+                </div>
+
+                <!-- Loay Public Market -->
+                <div class="tourist-col">
+                    <h3>Loay Public Market</h3>
+                    <img src="Screenshot 2025-04-01 113341.png" height="90%" width="90%" alt="Loay Public Market">
+                    <p>
+                        Loay Public Market is a bustling hub for local goods. <br>
+                        Experience the vibrant culture and fresh produce of Loay.
+                    </p>
+                </div>
+
+                <!-- Clarin Ancestral House -->
+                <div class="tourist-col">
+                    <h3>Clarin Ancestral House</h3>
+                    <img src="clarin-house.jpg" alt="Clarin Ancestral House">
+                    <p><a href="https://en.wikipedia.org/wiki/Clarin_Ancestral_House" target="_blank">
+                        The Clarin Ancestral House </a> is a historical treasure. <br>
+                        It showcases the rich heritage of Loay's past.
+                    </p>
+                </div>
+
+                <!-- Loay Museum -->
+                <div class="tourist-col">
+                    <h3>Loay Museum</h3>
+                    <img src="loay-museum.jpg" alt="Loay Museum">
+                    <p><a href="https://docs.google.com/presentation/d/e/2PACX-1vR8kgYDL2RN_xPHLbv4y1eViUQTk55eBOuV2oBqE2BL-PsUw97edxb7pcRksfSOAEbg5bPCfldTzuLx/pub?start=false&loop=false&delayms=3000&slide=id.gcace5d25fe_0_59" target="_blank">
+                        Loay Museum </a> is a cultural gem. <br>
+                        Discover artifacts and stories from Loay's history.
+                    </p>
+                </div>
+
+                <!-- Xzootic Park -->
+                <div class="tourist-col">
+                    <h3>Xzootic Park</h3>
+                    <img src="xzootic.jpg" alt="Xzootic Park">
+                    <p><a href="https://www.tripadvisor.com.ph/Attraction_Review-g7127824-d3243042-Reviews-Xzootic_Animal_Park-Loay_Bohol_Province_Visayas.html" target="_blank">
+                        Xzootic Park </a> is a family-friendly destination. <br>
+                        Explore exotic animals and enjoy nature's beauty.
+                    </p>
+                </div>
+
+                <!-- Bohol Lemur and Butterfly -->
+                <div class="tourist-col">
+                    <h3>Bohol Lemur and Butterfly</h3>
+                    <img src="lemur.jpg"   alt="Bohol Lemur and Butterfly">
+                    <p><a href="https://www.tripadvisor.com.ph/Attraction_Review-g7127824-d25570542-Reviews-Bohol_Lemur_and_Butterfly-Loay_Bohol_Province_Visayas.html" target="_blank">
+                        Bohol Lemur and Butterfly Sanctuary </a> is a must-visit. <br>
+                        Witness the beauty of nature and its creatures.
+                    </p>
+                </div>
+            </div>
+            <br><br>
+        </section>
+
+        <section class="officials">
+            <h1>Municipal Officials: 2022-2025</h1>
+            <p>Meet the dedicated officials of Loay who work tirelessly for the community.</p>
+            <div class="row">
+                <!-- Mayor -->
+                <div class="officials-col">
+                    <div class="profile">
+                        <img src="mayor.jpg" alt="Mayor">
+                        <h3>Ayuban, Hilario Lumayog</h3>
+                        <h4>Mayor</h4>
+                        <p>Mayor's Description</p>
+                    </div>
+                </div>
+
+                <!-- Vice Mayor -->
+                <div class="officials-col">
+                    <div class="profile">
+                        <img src="vice-mayor.jpg" alt="Vice Mayor">
+                        <h3>Cubarol, Rodrigo Jr. Banac</h3>
+                        <h4>Vice Mayor</h4>
+                        <p>Vice Mayor's Description</p>
+                    </div>
+                </div>
+
+                <!-- Councilor -->
+                <div class="officials-col">
+                    <div class="profile">
+                        <img src="councilor.jpg" alt="Councilor">
+                        <h3>Quiño, Philip Solano</h3>
+                        <h4>Councilor</h4>
+                        <p>Councilor's Description</p>
+                    </div>
+                </div>
+                <div class="officials-col">
+                    <div class="profile">
+                        <img src="councilor1.jpg" alt="Councilor">
+                        <h3>Sagaral, Wendy Manon-og</h3>
+                        <h4>Councilor</h4>
+                        <p>Councilor's Description</p>
+                    </div>
+                </div>
+                <div class="officials-col">
+                    <div class="profile">
+                        <img src="councilor2.jpg" alt="Councilor">
+                        <h3>Bullecer, Tiburcio Jr. Panos</h3>
+                        <h4>Councilor</h4>
+                        <p>Councilor's Description</p>
+                    </div>
+                </div>
+                <div class="officials-col">
+                    <div class="profile">
+                        <img src="councilor3.jpg" alt="Councilor">
+                        <h3>Adiong, Jescelo Solideo</h3>
+                        <h4>Councilor</h4>
+                        <p>Councilor's Description</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list">
+                <h2>Municipal Officials List</h2>
+                <div class="table-container">
+                    <table class="officials-table">
+                        <tbody>
+                            <tr>
+                                <td class="py-2">Mayor</td>
+                                <td class="py-2">:</td>
+                                <td class="py-2">Ayuban, Hilario Lumayog</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Vice Mayor</td>
+                                <td class="py-2">:</td>
+                                <td class="py-2">Cubarol, Rodrigo Jr. Banac</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">SB Members</td>
+                                <td class="py-2">:</td>
+                                <td class="py-2">Sagaral, Wendy Manon-og</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="py-2">Supanga, Rey Anthony Duco</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="py-2">Bullecer, Tiburcio Jr. Panos</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="py-2">Romero, John Paul Maghuyop</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="py-2">Adiong, Jescelo Solideo</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="py-2">Quiño, Philip Solano</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="py-2">Flores, Magileo Wilfredo Datoy</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="py-2">Tejano, Paulino Sagaral</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="municipal-info">
+            <h1>Municipal Information</h1>
+            <p>Here are some key details about the Municipality of Loay:</p>
+            <div class="table-container">
+                <table class="info-table">
+                    <tbody>
+                        <tr>
+                            <td>Location</td>
+                            <td>:</td>
+                            <td>Southern Part of Bohol</td>
+                        </tr>
+                        <tr>
+                            <td>Congressional District</td>
+                            <td>:</td>
+                            <td>3rd District</td>
+                        </tr>
+                        <tr>
+                            <td>Number of Barangays</td>
+                            <td>:</td>
+                            <td>24 Barangays (15 Coastal barangays, 9 Inland barangays)</td>
+                        </tr>
+                        <tr>
+                            <td>Income Classification</td>
+                            <td>:</td>
+                            <td>5th (Per D.O. 24-97)</td>
+                        </tr>
+                        <tr>
+                            <td>Ave. LGU Annual Income</td>
+                            <td>:</td>
+                            <td>P34,626,276</td>
+                        </tr>
+                        <tr>
+                            <td>Total Municipal Land Area</td>
+                            <td>:</td>
+                            <td>4,685 Hectares</td>
+                        </tr>
+                        <tr>
+                            <td>Timberland Area</td>
+                            <td>:</td>
+                            <td>50 hectares (as of 2001)</td>
+                        </tr>
+                        <tr>
+                            <td>Soil Cover</td>
+                            <td>:</td>
+                            <td>Hydrosol and Faraon, Sevilla, Loay, Bolinao and Calape Clay</td>
+                        </tr>
+                        <tr>
+                            <td>River Basins (Watershed Areas)</td>
+                            <td>:</td>
+                            <td>Tocdog RB; Loboc RB; Tagbuane RB</td>
+                        </tr>
+                        <tr>
+                            <td>Population</td>
+                            <td>:</td>
+                            <td>
+                                15,881 (2007 NSO Census)<br>
+                                16,536 (2010 projected)<br>
+                                17,665 (2015 projected)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Major Industries</td>
+                            <td>:</td>
+                            <td>Fishing, Farming</td>
+                        </tr>
+                        <tr>
+                            <td>Literacy Rate</td>
+                            <td>:</td>
+                            <td>97% (CY 1995)</td>
+                        </tr>
+                        <tr>
+                            <td>Number of Secondary Schools</td>
+                            <td>:</td>
+                            <td>2 (Barangays Poblacion Ubos and Hinawanan)</td>
+                        </tr>
+                        <tr>
+                            <td>Number of Primary/Elementary Schools</td>
+                            <td>:</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>Language/Dialect</td>
+                            <td>:</td>
+                            <td>Boholano (Binisaya)</td>
+                        </tr>
+                        <tr>
+                            <td>Religion/Religious Affiliation</td>
+                            <td>:</td>
+                            <td>96% Roman Catholics (CY 2001)</td>
+                        </tr>
+                        <tr>
+                            <td>Main Source of Potable Water</td>
+                            <td>:</td>
+                            <td>Groundwater extraction</td>
+                        </tr>
+                        <tr>
+                            <td>Total Road Length</td>
+                            <td>:</td>
+                            <td>105.031 Kms. Total (13.1 National, 7.330 Provincial, 11.155 Municipal, 73.446 Barangay)</td>
+                        </tr>
+                        <tr>
+                            <td>Total Number of Bridges</td>
+                            <td>:</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Communication System</td>
+                            <td>:</td>
+                            <td>1 Public Calling Office; Globe line connections</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="contact-us">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you! Reach out to us through any of the following channels:</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <img src="1LOAYLOGO.png" height="40%" width="70%" alt="Loay Logo" class="contact-logo">
+                    <h3>Municipal Office</h3>
+                    <p>Municipality of Loay, Bohol, Philippines</p>
+                    <p>Email: <a href="mailto:onelguloay@gmail.com">onelguloay@gmail.com</a></p>
+                    <p>Phone: +63 923 089 4274</p>
+                    <p>Landline: (038) 123-4567</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form action="#" method="post">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container">
+                <h3>Find Us Here</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.123456789012!2d123.987654321!3d9.654321098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aa1234567890ab%3A0xabcdef1234567890!2sLoay%2C%20Bohol%2C%20Philippines!5e0!3m2!1sen!2sph!4v1234567890123!5m2!1sen!2sph&z=8" 
+                    width="95%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <img src="republika.jpg" height="40%" width="40%" class="footer-logo">
+                    <h3>Republic of the Philippines</h3>
+                    <p>All Content is in the public domain unless otherwise stated</p>
+                </div>
+                <div class="footer-about">
+                    <h4>About GOVPH</h4>
+                    <p>Learn more about the Philippine government, its structure, how government works and the people behind it.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>GOV.PH</h4>
+                    <ul>
+                        <li><a href="https://www.gov.ph/data">Open Data Portal</a></li>
+                        <li><a href="https://www.officialgazette.gov.ph/">Official Gazette</a></li>
+                    </ul>
+                    <h4>Government Links</h4>
+                    <ul>
+                        <li><a href="https://president.gov.ph/">Office of the President</a></li>
+                        <li><a href="https://main.ovp.gov.ph/">Office of the Vice President</a></li>
+                        <li><a href="http://www.senate.gov.ph/">Senate of the Philippines</a></li>
+                        <li><a href="http://www.congress.gov.ph/">House of Representatives</a></li>
+                        <li><a href="https://sc.judiciary.gov.ph/">Supreme Court</a></li>
+                        <li><a href="https://ca.judiciary.gov.ph/">Court of Appeals</a></li>
+                        <li><a href="https://sb.judiciary.gov.ph/">Sandiganbayan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: <a href="mailto:onelguloay@gmail.com">onelguloay@gmail.com</a></p>
+                    <p>Phone: +63 923 089 4274</p>
+                    <p>Landline: </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript for Toggle Menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showmenu() {
+                navLinks.style.right = "0";
+            }
+            function hidemenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
+

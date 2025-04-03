@@ -1,0 +1,679 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30, 0.7)), url(bgloay.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 145px;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #2486e29a;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #2486e29a;
+    background: #2486e29a;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;  
+    }
+    .nav-links{
+        position: absolute;
+        background: #2486e29a;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: .7s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*--course --*/
+.services{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.services h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-col{
+    flex-basis: 31%;
+    background: #278ae79a;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.services-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width: 700px){
+    
+    .row{
+        flex-direction: column;
+    }
+}
+
+.tourist{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.tourist-col{
+    position: relative; /* Ensure child elements are positioned relative to this container */
+    overflow: hidden; /* Hide anything that overflows the container */
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tourist-col img{
+    width: 100%; /* Make the image take the full width of its container */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the image scales properly without distortion */
+    border-radius: 8px; /* Add rounded corners for consistency */
+    transition: 0.5s ease; /* Smooth transition for hover effect */
+    display: block;
+}
+
+.tourist-col h3 {
+    position: absolute; /* Position the h3 above the image */
+    top: 10%; /* Align it slightly below the top of the container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 20px; /* Add padding for better spacing */
+    border-radius: 5px; /* Slightly round the corners */
+    opacity: 0; /* Initially hidden */
+    z-index: 2; /* Ensure it appears above the image */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition for hover effect */
+}
+
+.tourist-col:hover h3 {
+    opacity: 1; /* Make the h3 visible on hover */
+    transform: translateX(-50%) translateY(0); /* Ensure it stays in place */
+}
+
+.tourist-col:hover img {
+    transform: scale(1.05); /* Slightly zoom the image on hover */
+    filter: brightness(50%); /* Dim the image to make the text more readable */
+}
+
+.tourist-col p {
+    margin-top: 15px; /* Add spacing below the image */
+    font-size: 0.9em;
+    color: #666;
+    z-index: 1; /* Ensure it stays below the h3 */
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: #2486e29a
+}
+
+/* Tourist Destinations Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 30px; /* Increase space between grid items */
+    margin-top: 20px;
+}
+
+.tourist-col {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px; /* Increase padding for better spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.tourist-col:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tourist-col img {
+    width: 100%; /* Ensure the image spans the full width of the box */
+    height: 250px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure the image scales properly without distortion */
+    border-radius: 8px;
+    margin-bottom: 15px; /* Add spacing below the image */
+}
+
+.tourist-col h3 {
+    font-size: 1.5em; /* Increase font size for better readability */
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.tourist-col p {
+    font-size: 1em; /* Adjust font size for better readability */
+    color: #000000;
+    line-height: 1.6; /* Improve line spacing */
+}
+
+.officials-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.officials-col img{
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+}
+
+/* Officials Section */
+.officials {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.officials h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.officials p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.officials-col {
+    flex: 1 1 calc(33.333% - 20px); /* 3 columns with spacing */
+    max-width: 300px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.officials-col:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.officials-col .profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Make the image circular */
+    border: 4px solid #2486e2; /* Add a border around the image */
+    object-fit: cover; /* Ensure the image scales properly */
+    margin-bottom: 15px;
+}
+
+.officials-col .profile h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.officials-col .profile h4 {
+    font-size: 1em;
+    color: #2486e2;
+    margin-bottom: 10px;
+}
+
+.officials-col .profile p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* List Section */
+.list {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.list h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    overflow-x: auto; /* Ensure the table is scrollable on smaller screens */
+}
+
+.officials-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.officials-table td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    color: #333;
+}
+
+.officials-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Add a subtle background for alternate rows */
+}
+
+.officials-table tr:hover {
+    background-color: #e6f7ff; /* Highlight row on hover */
+}
+
+.officials-table td:first-child {
+    font-weight: bold; /* Highlight the first column */
+    color: #2486e2;
+}
+
+.officials-table td:nth-child(2) {
+    text-align: center; /* Center the colon (:) */
+    width: 5%;
+}
+
+.officials-table td:nth-child(3) {
+    text-align: left; /* Align the names to the left */
+}
+
+/* Municipal Information Section */
+.municipal-info {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+.municipal-info h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.municipal-info p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.table-container {
+    overflow-x: auto; /* Ensure the table is scrollable on smaller screens */
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.info-table td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    color: #333;
+}
+
+.info-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Add a subtle background for alternate rows */
+}
+
+.info-table tr:hover {
+    background-color: #e6f7ff; /* Highlight row on hover */
+}
+
+.info-table td:first-child {
+    font-weight: bold; /* Highlight the first column */
+    color: #2486e2;
+}
+
+.info-table td:nth-child(2) {
+    text-align: center; /* Center the colon (:) */
+    width: 5%;
+}
+
+.info-table td:nth-child(3) {
+    text-align: left; /* Align the data to the left */
+}
+
+/* Contact Us Section */
+.contact-us {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-us h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1 1 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3,
+.contact-form h3 {
+    font-size: 1.5em;
+    color: #2486e2;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 1em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #2486e2;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    background-color: #2486e2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #1a5ca0;
+}
+
+/* Map Container */
+.map-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.map-container h3 {
+    font-size: 1.5em;
+    color: #2486e2;
+    margin-bottom: 20px;
+}
+
+.map-container iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content,
+.footer-about,
+.footer-links,
+.footer-contact {
+    flex: 1 1 250px;
+    margin: 10px;
+}
+
+.footer h3,
+.footer h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #f9f9f9;
+}
+
+.footer p {
+    margin: 5px 0;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.footer a {
+    color: #4da6ff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin: 5px 0;
+}
+
+.footer ul li a {
+    color: #4da6ff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
